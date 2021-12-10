@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reviews-2-s",
+      "handler": "reviews2.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reviews-2-s/count",
+      "handler": "reviews2.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reviews-2-s/:id",
+      "handler": "reviews2.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reviews-2-s",
+      "handler": "reviews2.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reviews-2-s/:id",
+      "handler": "reviews2.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reviews-2-s/:id",
+      "handler": "reviews2.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

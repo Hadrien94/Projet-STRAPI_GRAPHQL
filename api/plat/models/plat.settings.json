@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plats",
+  "info": {
+    "name": "plats",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "prix": {
+      "type": "integer"
+    },
+    "category": {
+      "model": "categorie",
+      "via": "plats"
+    },
+    "menu": {
+      "model": "menu",
+      "via": "plats"
+    }
+  }
+}
